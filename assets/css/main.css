@@ -19,6 +19,12 @@ iframe{
   max-width: 100%;
   border-radius: 5px;
 }
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #left-section{
   background: white;
   border-radius: 10px;
@@ -43,6 +49,37 @@ border-radius: 10px;
 
 #q2, #q3{
   display: none;
+}
+
+#final-btn{
+  display: none;
+}
+
+#result-section{
+  margin-top: 30px;
+  background: white;
+  border-radius: 10px;
+  display: none;
+}
+
+#question1, #question2, #question3{
+  font-size: 25px;
+}
+
+.result-chart{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table-heading{
+  color: white;
+  background: #1F76BD;
+  font-size: 25px;
+}
+
+.table{
+  width: 70%;
 }
 
 .radar{

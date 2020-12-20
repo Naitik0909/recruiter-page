@@ -109,11 +109,14 @@ rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbD
                 <form name="q3-form" class="comment-form" method="post">
                   <textarea placeholder="Enter comments" name="q3" rows="8" cols="80"></textarea>
                   <br><br>
-                  <button class="btn btn-primary" onclick="getNextQuestion()" type="button" name="button">Save</button>
+                  <button class="btn btn-primary" onclick="getNextQuestion()" type="button" name="button">Save</button><br><br>
                 </form>
-
               </div>
+
           </div>
+
+            <button id="final-btn" class="btn btn-lg btn-success" onclick="getResult()"
+             type="button" name="button">Analyse score</button>
 
 
         </div>
@@ -147,6 +150,33 @@ rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbD
 
     </div>
 
+
+    <div class="row">
+      <div id="result-section" class="container text-center">
+        <h1>Result</h1><hr>
+
+        <table class="table">
+        <tr class="table-heading">
+
+          <th scope="col">
+            Question
+          </th>
+          <th scope="col">
+            Grade
+          </th>
+          <th scope="col">
+            Comment
+          </th>
+        </tr>
+
+        </table>
+
+        <div class="result-chart">
+          <canvas id="resultChart"></canvas>
+        </div>
+      </div>
+    </div>
+
     </div>
   </section>
 
@@ -168,6 +198,7 @@ crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="assets/js/brain.js"></script>
 <script type="text/javascript" src="assets/js/questions.js"></script>
+<script type="text/javascript" src="assets/js/result.js"></script>
 </body>
 
 </html>
