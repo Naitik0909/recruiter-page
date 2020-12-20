@@ -17,11 +17,14 @@ rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbD
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+    <div id="header" class="container-fluid">
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="navbar-brand" href="#">Brand</a></li>
+        <li><img width="200px"src="assets/images/logo.png" alt=""> </li>
+        <!-- <li><a class="navbar-brand" href="#">Brand</a></li> -->
       </ul>
 
     </div>
@@ -30,11 +33,12 @@ rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbD
   <section class="header">
     <div class="container">
 
+      <!-- profile row -->
 
     <div class="row">
       <div class="col">
         <div id="left-section" class="container text-center">
-          <img class="profile" width="130px;" src="https://image.freepik.com/free-vector/avatar-smiling-boy-facial-expression-icon-isolated-from-white-background_102172-300.jpg" alt="">
+          <img class="profile" width="130px;" src="assets/images/avatar-trans.png" alt="">
           <h3>Naitik Parmar</h3>
           <div class="radar">
             <canvas id="myChart"></canvas>
@@ -49,12 +53,12 @@ rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbD
 
           <div class="menu-wrapper">
           	<ul class="menu">
-          		  <li class="item"><button type="button" class="btn btn-primary pill" onclick="showContent('q1')" data-aos="fade-up" name="button">Q1</button></li>
-                <li class="item"><button type="button" class="btn btn-primary pill" onclick="showContent('q2')" data-aos="fade-up" name="button">Q2</button></li>
-                <li class="item"><button type="button" class="btn btn-primary pill" onclick="showContent('q3')" data-aos="fade-up" name="button">Q3</button></li>
-                <li class="item"><button type="button" class="btn btn-primary pill" onclick="showContent('q4')" data-aos="fade-up" name="button">Q4</button></li>
-                <li class="item"><button type="button" class="btn btn-primary pill" onclick="showContent('q5')" data-aos="fade-up" name="button">Q5</button></li>
-                <li class="item"><button type="button" class="btn btn-primary pill" onclick="showContent('q6')" data-aos="fade-up" name="button">Q6</button></li>
+          		  <li class="item"><button type="button" class="btn btn-info pill" onclick="showContent('q1')" data-aos="fade-up" name="button">Q1</button></li>
+                <li class="item"><button type="button" class="btn btn-info pill" onclick="showContent('q2')" data-aos="fade-up" name="button">Q2</button></li>
+                <li class="item"><button type="button" class="btn btn-info pill" onclick="showContent('q3')" data-aos="fade-up" name="button">Q3</button></li>
+                <li class="item"><button type="button" class="btn btn-info pill" onclick="showContent('q4')" data-aos="fade-up" name="button">Q4</button></li>
+                <li class="item"><button type="button" class="btn btn-info pill" onclick="showContent('q5')" data-aos="fade-up" name="button">Q5</button></li>
+                <li class="item"><button type="button" class="btn btn-info pill" onclick="showContent('q6')" data-aos="fade-up" name="button">Q6</button></li>
           	</ul>
 
           	<div class="paddles">
@@ -67,8 +71,10 @@ rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbD
           	</div>
           </div>
 
+          <!-- question 1 -->
+
           <div id="q1">
-            <p id="question1">Question 1. </p>
+            <p id="question1"> <i class="fas fa-hand-point-right"></i>&nbsp;Question 1. </p>
             <iframe width="100%" height="250"
             src="https://www.youtube.com/embed/ebrvE9KpCik">
           </iframe>
@@ -77,14 +83,16 @@ rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbD
                 <form id="q1-form" name="q1-form" class="comment-form" method="post">
                   <textarea placeholder="Enter comments" name="q1" rows="8" cols="80"></textarea>
                   <br><br>
-                  <button class="btn btn-primary" type="button" onclick="getNextQuestion()" name="button">Save</button>
+                  <button class="btn btn-info" type="button" onclick="getNextQuestion()" name="button">Save</button>
                 </form>
 
               </div>
           </div>
 
+          <!-- question 2 -->
+
           <div id="q2">
-            <p id="question2">Question 2. </p>
+            <p id="question2"><i class="fas fa-hand-point-right"></i>&nbsp;Question 2. </p>
             <iframe width="100%" height="220"
             src="https://www.youtube.com/embed/ebrvE9KpCik">
           </iframe>
@@ -93,14 +101,16 @@ rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbD
                 <form name="q2-form" class="comment-form" method="post">
                   <textarea placeholder="Enter comments" name="q2" rows="8" cols="80"></textarea>
                   <br><br>
-                  <button class="btn btn-primary" onclick="getNextQuestion()" type="button" name="button">Save</button>
+                  <button class="btn btn-info" onclick="getNextQuestion()" type="button" name="button">Save</button>
                 </form>
 
               </div>
           </div>
 
+          <!-- question 3 -->
+
           <div id="q3">
-            <p id="question3">Question 3. </p>
+            <p id="question3"><i class="fas fa-hand-point-right"></i>&nbsp;Question 3. </p>
             <iframe width="100%" height="220"
             src="https://www.youtube.com/embed/ebrvE9KpCik">
           </iframe>
@@ -109,18 +119,20 @@ rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbD
                 <form name="q3-form" class="comment-form" method="post">
                   <textarea placeholder="Enter comments" name="q3" rows="8" cols="80"></textarea>
                   <br><br>
-                  <button class="btn btn-primary" onclick="getNextQuestion()" type="button" name="button">Save</button><br><br>
+                  <button class="btn btn-info" onclick="getNextQuestion()" type="button" name="button">Save</button><br><br>
                 </form>
               </div>
 
           </div>
 
-            <button id="final-btn" class="btn btn-lg btn-success" onclick="getResult()"
+            <button id="final-btn" class="btn btn-lg btn-info" onclick="getResult()"
              type="button" name="button">Analyse score</button>
 
 
         </div>
       </div>
+
+<!-- grading column -->
 
       <div class="col">
         <div id="right-section" class="container">
@@ -132,11 +144,11 @@ rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbD
             <form id="scoreForm" name="score-form"method="post">
               <div class="btn-group" role="group" name="main-score">
 
-                <button type="button" class="btn btn-primary score">1</button>
-                <button type="button" class="btn btn-primary score">2</button>
-                <button type="button" class="btn btn-primary score">3</button>
-                <button type="button" class="btn btn-primary score">4</button>
-                <button type="button" class="btn btn-primary score">5</button>
+                <button type="button" class="btn btn-info score">1</button>
+                <button type="button" class="btn btn-info score">2</button>
+                <button type="button" class="btn btn-info score">3</button>
+                <button type="button" class="btn btn-info score">4</button>
+                <button type="button" class="btn btn-info score">5</button>
 
               </div>
             </form>
@@ -150,6 +162,7 @@ rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbD
 
     </div>
 
+<!-- result section -->
 
     <div class="row">
       <div id="result-section" class="container text-center">
@@ -170,7 +183,7 @@ rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbD
         </tr>
 
         </table>
-
+        <h1>Total Score:</h1><br>
         <div class="result-chart">
           <canvas id="resultChart"></canvas>
         </div>
@@ -199,6 +212,9 @@ crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/js/brain.js"></script>
 <script type="text/javascript" src="assets/js/questions.js"></script>
 <script type="text/javascript" src="assets/js/result.js"></script>
+
+<!-- FONT AWESOME -->
+<script src="https://kit.fontawesome.com/f2148c770f.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,4 +1,7 @@
 
+
+// TO SHOW RESPECTIVE QUESTION
+
 function showContent(name){
   if (name == 'q1'){
 
@@ -28,6 +31,8 @@ $('#q3').css('display', 'inherit');
 var score = 0;
 var i = 0;
 
+// TO APPEND QUESTION WRITTEN IN BRAIN DYNAMICALLY TO HTML
+
 for (var j=0;j<3;j++){
   var nextQuestion = "#question"+String(j+1);
   $(nextQuestion).append(questions[j].question);
@@ -37,13 +42,15 @@ $(".btn-group > button.btn").on("click", function(){
     score = Number(this.innerHTML);
 });
 
+// ON PRESSING SAVE BUTTON
+
 function getNextQuestion(){
   var current_form = "q"+String(i+1)+"-form";
   var current_question = "q"+String(i+1);
 
   comment = document.forms[current_form][current_question].value;
 
-  // VALIDATE COMMENT AND SCORE
+  // VALIDATING COMMENT AND SCORE
 
 
   if(comment == ""){

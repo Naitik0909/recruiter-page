@@ -1,3 +1,6 @@
+
+// TO STORE INFORMATION OF QUESTIONS AND RESPONSES
+
 class Question{
   constructor(question, answer_link, score, comment){
     this.question = question;
@@ -5,11 +8,9 @@ class Question{
     this.score = score;
     this.comment = comment
   }
-
-  getName(){
-    console.log(this.question);
-  }
 }
+
+// INITIALIZING AN ARRAY OF 3 DUMMY QUESTIONS
 
 let questions = [
   new Question(

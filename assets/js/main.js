@@ -1,3 +1,6 @@
+
+// PROFILE RADAR
+
 var ctx = document.getElementById("myChart").getContext('2d');
 var myRadarChart = new Chart(ctx, {
     type: 'radar',
@@ -17,7 +20,7 @@ var myRadarChart = new Chart(ctx, {
   },
 });
 
-
+// JS FOR NEXT AND PREV BUTTON OF QUESTIONS -
 
 // duration of scroll animation
 var scrollDuration = 300;
